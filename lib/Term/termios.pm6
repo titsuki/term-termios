@@ -105,7 +105,7 @@ my %lflags = (
   IEXTEN  => 100000,
 );
 
-class Term::termios is repr('CStruct') {
+class Term::termios:ver<0.0.1>:auth<titsuki> is repr('CStruct') {
   has int32 $.iflag;
   has int32 $.oflag;
   has int32 $.cflag;
